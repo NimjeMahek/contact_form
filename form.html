@@ -4,101 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Form</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        .form-container {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-        h2 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: #333;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        label {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: #444;
-            margin-bottom: 0.25rem;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-            box-sizing: border-box;
-        }
-        input:focus, select:focus, textarea:focus, button:focus {
-            outline: none;
-            border-color: #2563eb;
-            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-        }
-        .radio-group {
-            margin-bottom: 1rem;
-        }
-        .radio-group label {
-            display: inline-block;
-            margin-right: 1rem;
-            font-weight: normal;
-        }
-        .radio-group input {
-            width: auto;
-            margin-right: 0.25rem;
-        }
-        .checkbox-group label {
-            display: inline-flex;
-            align-items: center;
-            font-weight: normal;
-        }
-        .checkbox-group input {
-            width: auto;
-            margin-right: 0.25rem;
-        }
-        .button-group {
-            display: flex;
-            gap: 1rem;
-        }
-        button {
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            color: white;
-        }
-        button[type="submit"] {
-            background-color: #2563eb;
-        }
-        button[type="submit"]:hover {
-            background-color: #1d4ed8;
-        }
-        button[type="reset"] {
-            background-color: #6b7280;
-        }
-        button[type="reset"]:hover {
-            background-color: #4b5563;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="script.js"></script>
+
     <div class="form-container">
         <h2>Contact Form</h2>
         <form action="/submit" method="post">
